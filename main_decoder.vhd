@@ -5,12 +5,7 @@ use IEEE.numeric_std.all;
 entity main_decoder is
     port(
         opcode : in  STD_LOGIC_VECTOR(5 downto 0);
-        RegWrite : out  STD_LOGIC;
-        RegDst : out  STD_LOGIC;
-        ALUSrc : out  STD_LOGIC;
-        Branch : out  STD_LOGIC;
-        MemWrite : out  STD_LOGIC;
-        MemtoReg : out  STD_LOGIC;
+        RegWrite, RegDst, ALUSrc, Branch, MemWrite, MemtoReg : out  STD_LOGIC;
         ALUOp : out  STD_LOGIC_VECTOR(1 downto 0);
         Jump : out  STD_LOGIC
         )
