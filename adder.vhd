@@ -13,7 +13,7 @@ entity adder is
 end entity;
 
 architecture beh of adder is
-	begin
+begin
 		S <= A+B;
 end beh;
 
